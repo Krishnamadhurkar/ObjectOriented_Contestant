@@ -20,6 +20,14 @@ public class RugbyResult implements IResult {
 			return false;
 	}
 	
+	public IContestant getWinner() {
+		if (getScore(team1Points, team1Tasks, team1BotFellDown) > 
+			getScore(team1Points, team1Tasks, team1BotFellDown)) {
+			return team1;
+		}
+		else
+			return team2;
+	}
 	
 	
 	
